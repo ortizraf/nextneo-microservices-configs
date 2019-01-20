@@ -32,3 +32,8 @@ zuul:
     socket-timeout-millis: 60000
   semaphore: 
     max-semaphores: 500
+  routes:
+    uaa:
+      path: /api/**
+      sensitiveHeaders:
+      serviceId: auth-server
