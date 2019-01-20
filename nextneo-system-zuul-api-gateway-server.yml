@@ -34,6 +34,10 @@ zuul:
     max-semaphores: 500
   routes:
     nextneo-system-order-server:
+      path: /nextneo-system-auth-server/**
+      sensitiveHeaders:
+      serviceId: nextneo-system-auth-server
+    nextneo-system-order-server:
       path: /nextneo-system-order-server/**
       sensitiveHeaders:
       serviceId: nextneo-system-order-server
