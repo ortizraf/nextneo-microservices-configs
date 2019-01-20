@@ -33,7 +33,7 @@ zuul:
   semaphore: 
     max-semaphores: 500
   routes:
-    uaa:
+    api:
       path: /api/**
       sensitiveHeaders:
       serviceId: auth-server
