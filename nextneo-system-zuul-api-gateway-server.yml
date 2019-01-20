@@ -32,8 +32,10 @@ zuul:
     socket-timeout-millis: 60000
   semaphore: 
     max-semaphores: 500
+
+  #By default Zuul cut that header while forwarding our request.
   routes:
-    nextneo-system-order-server:
+    nextneo-system-auth-server:
       path: /nextneo-system-auth-server/**
       sensitiveHeaders:
       serviceId: nextneo-system-auth-server
